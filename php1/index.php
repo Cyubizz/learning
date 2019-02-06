@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Филипенко
- * Date: 06.02.2019
- * Time: 13:53
- */
 
 function test($nmb){
     $res = 0;
