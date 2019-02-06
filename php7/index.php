@@ -5,10 +5,7 @@ function test($year){
         return 'Введено неверное значение';
     }
 
-    if(fmod($year, 4) == 0 && fmod($year, 100) != 0){
-        if(fmod($year, 400) == 0){
-            return 'Високосный год';
-        }
+    if((fmod($year, 4) == 0 && fmod($year, 100) != 0) || fmod($year, 400) == 0){
         return 'Невисокосный год';
     } else {
         return 'Невисокосный год';
