@@ -1,0 +1,8 @@
+$(document).ready(function(){
+    $('a').each(function(val){
+        var href = $(this).attr('href').replace('www.', '');
+        if(href != document.domain.replace('www.', '')){
+            console.log(href);
+        }
+    });
+});
