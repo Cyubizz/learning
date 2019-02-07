@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $('.box').click(function(){
+        var a = $('.box:checked').length;
+        if(a == 3){
+            $('.box').filter(":not(':checked')").attr('disabled', 'disabled');
+        } else {
+            $('.box').removeAttr('disabled');
+        }
+    });
+});
